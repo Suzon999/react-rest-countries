@@ -11,19 +11,21 @@ const Countries = () => {
             .then(data => setCountries(data))
     }, [])
     return (
-        <div className='countries'>
+        <div >
             <h1>Visiting All Country In The World</h1>
             <h3>Total Countries :{countries.length} </h3>
 
-            {
-                countries.map(country => <Country
-                    country={country}
-                // name={country.name.common}
-                // flags={country.flags.png}
-                // population={country.population}
+            <div className='countries'>
+                {
+                    countries.map(country => <Country
+                        country={country}
+                    // name={country.name.common}
+                    // flags={country.flags.png}
+                    // population={country.population}
 
-                ></Country>)
-            }
+                    ></Country>)
+                }
+            </div>
         </div>
     );
 };
