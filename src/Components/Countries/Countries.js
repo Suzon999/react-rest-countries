@@ -19,6 +19,8 @@ const Countries = () => {
                 {
                     countries.map(country => <Country
                         country={country}
+                        kye={country.ccn3}
+
                     // name={country.name.common}
                     // flags={country.flags.png}
                     // population={country.population}
